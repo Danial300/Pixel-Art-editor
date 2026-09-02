@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>PixelForge</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <h1>PixelForge</h1>
+
+      <p class="description">Pixel Art Editor</p>
+
+      <div class="toolbar">
+        <button id="pencilBtn">Pencil</button>
+        <button id="eraserBtn">Eraser</button>
+
+        <div>
+          <label for="colorPicker">
+            color:
+          </label>
+        
+          <input
+            id="colorPicker"
+            type="color"
+            value="#ff4d6d"
+          />
+        </div>
+
+        <button id="clearBtn">Clear</button>
+        <button id="EyedropperBtn">Eyedropper</button>
+        <button id="fillBackground">Fill Background</button>
+      </div>
+      
+      <canvas
+        id="pixelCanvas"
+        width="512"
+        height="512"
+      ></canvas>
+    </main>
+
+    <button id="saveBtn">Save PNG</button>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
